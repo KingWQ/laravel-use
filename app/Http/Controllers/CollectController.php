@@ -24,7 +24,11 @@ class CollectController extends Controller
         $collection->only(['product_id', 'name'])->dump();
         $collection->except(['product_id', 'name'])->dump();
 
-        //3：最后一个last(), 前面两条take(2)
+        //14:filter()使用给定的回调函数过滤集合，没有回调函数，集合中所有返回false的元素移除
+        $collection = collect([1, 2, 3, null, false, '', 0, []]);
+        dump($collection->filter()->all());
+
+        //3：最后一个last(), first() 前面两条take(2)
         dump(collect([1,2,3,4])->last());
         collect([1,2,3,4])->take(2)->dump();
 
@@ -49,20 +53,43 @@ class CollectController extends Controller
         dump(collect([])->isEmpty());
         dump(empty(collect([])));
 
-        //11:遍历each(), map()
+        //11:each()循环集合, map()循环修改集合项并返回
+        $collection = collect([1, 2, 3, 4, 5]);
+        $temp = $collection->map(function ($item,$key){
+            return $item*2;
+        });
+        dump($temp->all());
 
-        //12:keyBy('id')把id当做键
+        //12:keyBy()指定键作为集合的键
+        $collection = collect([
+            ['product_id' => 'prod-100', 'name' => 'Desk'],
+            ['product_id' => 'prod-200', 'name' => 'Chair'],
+        ]);
+        $collection->keyBy('product_id')->dump();
 
-        //13:groupBy()分组
+        //13:groupBy()根据指定键对集合项进行分组
+        $collection = collect([
+            ['account_id' => 'account-x10', 'product' => 'Chair'],
+            ['account_id' => 'account-x10', 'product' => 'Bookcase'],
+            ['account_id' => 'account-x11', 'product' => 'Desk'],
+        ]);
+        $grouped = $collection->groupBy('account_id');
+        dump($grouped->toArray());
 
-        //14:filter()筛选
+        //15:flip()集合的键和对应的值进行互换
+        $collection = collect(['name' => 'taylor', 'framework' => 'laravel']);
+        $fliped = $collection->flip();
+        dump($fliped->all());
 
-        //15:flip() key和value互换
+        //16: combine()将一个集合的值作为键，与另一个数组或集合的值进行结合
+        $collection = collect(['name', 'age']);
+        $combined = $collection->combine(['Mike',29]);
+        dump($combined->all());
 
-        //16: combine() 把一个集合当做key,另一个集合当做value
-
-        //17：crossJoin()生成笛卡尔集
-
+        //17：crossJoin()交叉连接指定数组或集合的值，返回所有可能排列的笛卡尔积
+        $collection = collect(['S', 'M', 'L', 'XL', '2XL']);
+        $matrix = $collection->crossJoin(['red', 'white', 'black']);
+        dump($matrix->all());
 
     }
 }
