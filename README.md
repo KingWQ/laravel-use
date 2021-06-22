@@ -15,8 +15,18 @@
 - 使用ORM新增数据，先创建模型对象，在fill, 在save()。
 
 ### 集合的使用
-- 
+- 获取所有的键或值：keys() values()
+- 获取指定键对应的值，第二个参数指定生成集合的键：pluck()
+- 获取特定的键值：only() except()
+- 回调函数过滤，不传回调函数所有返回false元素被删除：filter()
+- 第一个first(), 最后一个last(), 前面两个take(2)
+- 集合元素拼接：implode()
+- 判断是否有值contains(), 判断是否有键has()
+- 判断集合是否为空：isEmpty()
+- 集合循环：each() map()
+- 指定键作为集合的键：keyBy()
+- 根据指定键对集合项进行分组：groupBy()
+- 集合的键和对应值进行互换：flip()
+- 将一个集合的值作为键，与另一个集合后数组的值进行结合：combine()
+- 笛卡尔集：crossJoin()
 
-### 使用laravel
-- 设计数据库字段时，json存longtext
-- 判断集合是否为空，使用isEmpty, 不是empty()
