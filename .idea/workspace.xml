@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="485776c6-c177-4f43-b20d-f41bca1fba58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Di/DiIoc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Di/DiManual.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Di/DiNo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Di/DiService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Di/IocContainer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Di/Iphone11.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Di/Iphone6.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Di/NewMing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Di/XiaoMing.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -135,13 +143,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Services/Di" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Services/Di" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app/Services/Di" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -149,6 +161,18 @@
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -161,7 +185,8 @@
       <option name="presentableId" value="Default" />
       <updated>1623566295099</updated>
       <workItem from="1623566296916" duration="9990000" />
-      <workItem from="1624329636241" duration="13288000" />
+      <workItem from="1624329636241" duration="14752000" />
+      <workItem from="1624687165414" duration="11878000" />
     </task>
     <servers />
   </component>
@@ -173,17 +198,23 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="220" y="46" key="#SQL_Dialects/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1623574454377" />
-    <state x="516" y="374" key="NewPhpFileDialog" timestamp="1623574191063">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="-1241" y="316" key="NewPhpClassDialog" timestamp="1624696124257">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
+    <state x="-1241" y="316" key="NewPhpClassDialog/0.23.1440.877/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1624696124257" />
+    <state x="-1232" y="446" key="NewPhpFileDialog" timestamp="1624698769248">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1232" y="446" key="NewPhpFileDialog/0.23.1440.877/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1624698769248" />
     <state x="516" y="374" key="NewPhpFileDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1623574191063" />
     <state x="0" y="23" width="1408" height="877" maximized="true" key="dock-window-1" timestamp="1624371991109">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="0" y="23" width="1408" height="877" maximized="true" key="dock-window-1/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1624371991109" />
-    <state x="301" y="23" width="838" height="877" key="search.everywhere.popup" timestamp="1623594836969">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="-1519" y="23" width="1118" height="1057" key="search.everywhere.popup" timestamp="1624699411131">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
+    <state x="-1519" y="23" width="1118" height="1057" key="search.everywhere.popup/0.23.1440.877/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1624699411131" />
     <state x="301" y="23" width="838" height="877" key="search.everywhere.popup/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1623594836969" />
   </component>
 </project>
